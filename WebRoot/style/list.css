@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #263d36;
+  background-image: url("../src/images/header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  max-width: none;
+  padding: 3vw 2em;
+  text-align: center;
+  
+}
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  #e81c4f;
+  color: white;
+}
+#top{
+  width: 100%;
+  margin-top: 20px;
+  position: absolute;
+  padding-left: 50px;
+  z-index: 1;
+  border-bottom: 3px groove rgb(3,139,115);
+}
+#isdu{
+    float: left;
+    margin-bottom: 10px;
+}
+#title{
+    float: left;
+    margin-top: 9px;
+    margin-left: 5px;
+  }
+#top strong{
+  margin-left: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+#menu{
+  width: 150px;
+  top: 280px;
+  left: 50px;
+  z-index: 0;
+  text-align: center;
+}
+#menu a{
+  text-decoration: none;
+  color: rgb(170,170,109);
+}
+#add{
+  margin-bottom: 40px;
+  font-size: 30px;
+  border: 1px solid rgb(251,211,52);
+  border-radius: 10px;
+  background-color: rgb(251,211,52);
+}#logout{
+  font-size: 30px;
+  border: 1px solid rgb(251,211,52);
+  border-radius: 10px;
+  background-color: rgb(251,211,52);
+}
+#list{
+  top: 150px;
+  z-index: 1;
+}
+#cards tr{
+}
+#cards th{
+   border: 1px solid rgb(170,170,109);
+   text-align: center;
+   width: 100px;
+   height: 30px;
+}
+#cards td{
+   border: 1px solid rgb(170,170,109);
+   text-align: center;
+   width: 100px;
+   height: 100px;
+}
+#cards td a{
+  text-decoration: none;
+  color: black;
+}

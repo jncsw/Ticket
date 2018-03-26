@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>电子票务管理系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="style/login.css" type="text/css" rel="stylesheet"/>
+    <script src="scripts/MD5.js"></script>
+    <script>
+		function encrypt(){
+			x=document.getElementById("password");
+			y=document.getElementById("password2");
+			y.value=hex_md5(x.value);
+		}
+		
+	</script>
+  </head>
+  <body>
+  	<div id="top"><a href="https://www.online.sdu.edu.cn/"><img src="src/images/logo-red.png" height=200px width=260px></a></div>  		
+    <div id = "background">
+    	<div id="leftarea">
+    		<div class="icon"><img src="src/images/isdu.png"></div>
+    	</div>
+    	<div id="wrapper">
+            <form  action="Login" autocomplete="on"> 
+                                <h1>登陆</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > 用户名 </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="SDUonline"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> 密码 </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="SDUonline" /> 
+                                    <input type="hidden" name="password2" id="password2">
+                                </p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" onclick="encrypt();" /> 
+								</p>
+            </form>
+    	</div>
+    </div>
+  </body>
+</html>
